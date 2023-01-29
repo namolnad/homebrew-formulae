@@ -1,10 +1,10 @@
-# Namolnad Namolnad
+# Namolnad Formulas
 
 ## How do I install these formulae?
 
-`brew install namolnad/namolnad/<formula>`
+`brew install namolnad/formulas/<formula>`
 
-Or `brew tap namolnad/namolnad` and then `brew install <formula>`.
+Or `brew tap namolnad/formulas` and then `brew install <formula>`.
 
 ## Documentation
 
