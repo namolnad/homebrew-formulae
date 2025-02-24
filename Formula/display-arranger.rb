@@ -12,7 +12,7 @@ class DisplayArranger < Formula
   uses_from_macos "swift"
 
   def install
-    system "swift", "build", "--configuration", "release", "--product", "display-arranger"
+    system "swift", "build", "--disable-sandbox", "--configuration", "release", "--product", "display-arranger"
     bin.install ".build/release/display-arranger"
   end
 
