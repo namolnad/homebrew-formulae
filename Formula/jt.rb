@@ -4,7 +4,7 @@ class Jt < Formula
   desc "CLI to return a subset of JSON input based on a simple schema"
   homepage "https://github.com/namolnad/jt"
   url "https://github.com/namolnad/jt.git",
-      tag: VERSION,
+      tag:      VERSION,
       revision: "d4566fafdd294593509b16f33a5e371041b47dfc"
   license "MIT"
   head "https://github.com/namolnad/jt.git", branch: "main"

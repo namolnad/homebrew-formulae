@@ -5,8 +5,8 @@ class Finch < Formula
   desc "CLI to return a subset of JSON input based on a simple schema"
   homepage "https://github.com/namolnad/finch"
   url "https://github.com/namolnad/finch.git",
-    tag: VERSION,
-    revision: "076cfd08cb59b4d90f76e3379e59951172cb4292"
+      tag:      VERSION,
+      revision: "076cfd08cb59b4d90f76e3379e59951172cb4292"
   license "MIT"
   head "https://github.com/namolnad/finch.git", branch: "main"
 
