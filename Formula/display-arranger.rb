@@ -1,9 +1,11 @@
 class DisplayArranger < Formula
   VERSION = "0.3.1".freeze
 
-  desc "Command-line tool for easily interacting with & arranging your Mac's displays"
+  desc "CLI for interacting with & arranging your Mac's displays a bit easier"
   homepage "https://github.com/namolnad/display-arranger"
-  url "https://github.com/namolnad/display-arranger.git", tag: VERSION, revision: "2aff6965a3138a89e5bb6cfd9a6fabb8d0ce859b"
+  url "https://github.com/namolnad/display-arranger.git",
+    tag: VERSION,
+    revision: "2aff6965a3138a89e5bb6cfd9a6fabb8d0ce859b"
   license "MIT"
   head "https://github.com/namolnad/display-arranger.git", branch: "main"
 

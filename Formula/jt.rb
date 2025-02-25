@@ -1,8 +1,10 @@
 class Jt < Formula
-  desc "Command-line tool to return a subset of JSON input based on a simple schema"
+  VERSION = "0.1.0".freeze
+
+  desc "CLI to return a subset of JSON input based on a simple schema"
   homepage "https://github.com/namolnad/jt"
   url "https://github.com/namolnad/jt.git",
-      tag:      "0.1.0",
+      tag: VERSION,
       revision: "d4566fafdd294593509b16f33a5e371041b47dfc"
   license "MIT"
   head "https://github.com/namolnad/jt.git", branch: "main"
