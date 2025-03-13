@@ -1,14 +1,14 @@
 class Envcrypt < Formula
-  VERSION = "0.1.0".freeze
+  VERSION = "0.2.0".freeze
 
   desc "Securely encrypt, manage, and load your `.env` files in public repositories"
   homepage "https://github.com/namolnad/envcrypt"
   url "https://github.com/namolnad/envcrypt.git",
       tag:      VERSION,
-      revision: "10bc5fd32e28d703d28b980ad6fa0a9715a208ca"
+      revision: "c2f533f19c684cdb7f4d5a9a0ffd09da3cb149c0"
+  version VERSION
   license "MIT"
   head "https://github.com/namolnad/envcrypt.git", branch: "main"
-  version VERSION
 
   depends_on "ruby"
 
@@ -26,7 +26,7 @@ class Envcrypt < Formula
 
     # Test encryption
     system bin/"envcrypt", "encrypt", "--key", "testkey"
-    assert_predicate testpath/".env.enc", :exist?
+    assert_path_exists testpath/".env.enc"
 
     # Test that the original content is not in the encrypted file
     refute_match "TEST=value", (testpath/".env.enc").read
@@ -35,5 +35,3 @@ class Envcrypt < Formula
     assert_match "TEST=value", system(bin/"envcrypt", "--key", "testkey", "decrypt", "#{testpath}/.env.enc").strip
   end
 end
-
-
