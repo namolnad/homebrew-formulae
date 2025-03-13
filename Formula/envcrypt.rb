@@ -6,7 +6,6 @@ class Envcrypt < Formula
   url "https://github.com/namolnad/envcrypt.git",
       tag:      VERSION,
       revision: "c2f533f19c684cdb7f4d5a9a0ffd09da3cb149c0"
-  version VERSION
   license "MIT"
   head "https://github.com/namolnad/envcrypt.git", branch: "main"
 
@@ -15,7 +14,7 @@ class Envcrypt < Formula
   def install
     ENV["GEM_HOME"] = libexec
     system "gem", "build", "envcrypt.gemspec"
-    system "gem", "install", "envcrypt-#{version}.gem"
+    system "gem", "install", "envcrypt-#{VERSION}.gem"
     bin.install libexec/"bin/envcrypt"
     bin.env_script_all_files(libexec/"bin", GEM_HOME: ENV["GEM_HOME"])
   end
