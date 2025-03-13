@@ -1,11 +1,11 @@
 class Envcrypt < Formula
-  VERSION = "0.2.0".freeze
+  VERSION = "0.3.0".freeze
 
   desc "Securely encrypt, manage, and load your `.env` files in public repositories"
   homepage "https://github.com/namolnad/envcrypt"
   url "https://github.com/namolnad/envcrypt.git",
       tag:      VERSION,
-      revision: "c2f533f19c684cdb7f4d5a9a0ffd09da3cb149c0"
+      revision: "bf183a49de5a63dcbb4d9f2499cc27e206751eb3"
   license "MIT"
   head "https://github.com/namolnad/envcrypt.git", branch: "main"
 
