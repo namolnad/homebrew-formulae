@@ -1,11 +1,11 @@
 class Dotenvcrypt < Formula
-  VERSION = "0.4.0".freeze
+  VERSION = "0.5.0".freeze
 
   desc "Securely encrypt, manage, and load your `.env` files in public repositories"
   homepage "https://github.com/namolnad/dotenvcrypt"
   url "https://github.com/namolnad/dotenvcrypt.git",
       tag:      VERSION,
-      revision: "befe4e8eea5734404ad235ed6fe01c484b88955d"
+      revision: "e0f227509cd6ee596e94d814369e0348cc3977e4"
   license "MIT"
   head "https://github.com/namolnad/dotenvcrypt.git", branch: "main"
 
